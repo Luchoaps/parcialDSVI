@@ -5,58 +5,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Registrarse"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textStyle="bold"
-        android:background="#3F51B5"
+        android:background="#2ECDFB"
         android:textColor="@color/white"
-        android:text="REGISTRO"
-        android:textSize="38dp" />
+        android:text="Ingrese sus datos"
+        android:fontFamily="@font/LastingSketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textSize="40dp" />
 
 
     <EditText
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
+        android:hint="Name"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/LastingSketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
         android:textSize="32dp"/>
 
     <EditText
         android:id="@+id/txtCedula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cédula"
+        android:hint="Cedula"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/LastingSketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
         android:textSize="32dp"/>
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:hint="User"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/LastingSketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
         android:textSize="32dp"/>
 
     <EditText
         android:id="@+id/txtContrasena"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:hint="Password"
+        android:textColorHint="#839192"
+        android:textColor="@color/white"
+        android:fontFamily="@font/LastingSketch"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
         android:textSize="32dp"/>
+
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rbgTipoRegistro"
-        android:orientation="vertical"        >
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        >
 
         <RadioButton
             android:id="@+id/rbtAdministrador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Administrador"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:fontFamily="@font/LastingSketch"
             android:textSize="32dp" />
 
         <RadioButton
@@ -64,14 +95,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="32dp"
-            android:layout_marginEnd="20dp"
-            android:text="Cliente"/>
+            android:textColor="@color/white"
+            android:fontFamily="@font/LastingSketch"
+            android:text="Client"/>
     </RadioGroup>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:layout_marginLeft="32sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="32sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/LastingSketch"
+        android:text="Register"
         android:textSize="28dp"
         android:onClick="Registrar"/>
 
