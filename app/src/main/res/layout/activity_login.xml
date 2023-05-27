@@ -9,18 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="650dp"
-        android:layout_marginButton="20dp"
-        android:textStyle="bold"
         android:text="Bienvenidos a la Party!!!"
-        android:textSize="60dp"/>
+        android:textSize="32dp"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:onClick="Logout"
         android:text="logaut"
-        android:textSize="60dp"/>
+        android:textSize="30dp"/>
 
 </LinearLayout>
